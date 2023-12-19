@@ -1,0 +1,68 @@
+.containerHomePage {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerHomePage .info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info .homePageLeft p {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 150%;
+  width: 474px;
+  height: 260px;
+}
+
+.info .homePageLeft button {
+  width: 364px;
+  height: 79px;
+  border-radius: var(--border-radius-button);
+  background-color: var(--main-color);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.info .homePageLeft button a {
+  color: white;
+}
+
+.info .homePageRight img {
+  width: 500px;
+  height: 600px;
+}
+
+.seta {
+  position: relative;
+}
+
+.setaImg {
+  position: absolute;
+  top: -50px;
+  transform: rotateX(180deg);
+  animation: scrool 0.7s infinite linear;
+}
+
+@keyframes scrool {
+  0% {
+    top: -50px;
+  }
+  50% {
+    top: -55px;
+  }
+  100% {
+    top: -50px;
+  }
+}

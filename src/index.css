@@ -1,0 +1,16 @@
+:root {
+  --main-color: #73d3a5;
+  --font-color: #057a42;
+  --border-radius-button: 70px;
+  --services-images-border: 275px;
+}
+
+* {
+  color: var(--font-color);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}

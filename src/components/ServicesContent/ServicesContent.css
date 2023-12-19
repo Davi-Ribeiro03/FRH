@@ -1,0 +1,19 @@
+.servicesContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 80px;
+}
+
+.servicesContent img {
+  width: 251px;
+  height: 246px;
+}
+
+.servicesContent p {
+  color: var(--font-color);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 150%;
+}

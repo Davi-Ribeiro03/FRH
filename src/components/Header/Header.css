@@ -1,0 +1,30 @@
+header {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header img {
+  height: 90%;
+}
