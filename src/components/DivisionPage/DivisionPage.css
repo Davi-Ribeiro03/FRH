@@ -1,0 +1,17 @@
+.division{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.division .titulo {
+    text-align: center;
+}
+  
+.division .linha {
+    text-align: center;
+    background-color: var(--main-color);
+    width: 70vw;
+    height: 2px;
+    margin-bottom: 24px;
+}

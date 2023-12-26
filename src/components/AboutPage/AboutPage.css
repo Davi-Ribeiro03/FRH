@@ -3,19 +3,10 @@
   flex-direction: column;
   align-items: center;
 }
-.aboutPage .titulo {
-  text-align: center;
-}
-
-.aboutPage .linha {
-  background-color: var(--main-color);
-  width: 80%;
-  height: 2px;
-  margin-bottom: 24px;
-}
 
 .aboutInfo {
   display: flex;
+  justify-content: center;
   animation: appear 5ms linear 1;
   animation-timeline: view();
   animation-range: cover 0% cover 50%;
@@ -25,11 +16,12 @@
   animation: appear2 5ms linear 1;
   animation-timeline: view();
   animation-range: cover 0% cover 50%;
+  justify-content: center;
 }
 
 .aboutInfo .aboutInfoLeft,
 .aboutInfo2 .aboutInfoLeft {
-  width: 50%;
+  width: 40%;
   height: 320px;
   color: #fff;
   font-size: 22px;
@@ -47,7 +39,7 @@
 
 .aboutInfo .aboutInfoRight img,
 .aboutInfo2 .aboutInfoRight img {
-  width: 100%;
+  width: 40vw;
   height: 320px;
 }
 
