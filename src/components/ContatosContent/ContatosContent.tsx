@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContatosContent.css";
+import { motion } from "framer-motion";
 
 const ContatosContent = ({
   icone,
@@ -9,10 +10,15 @@ const ContatosContent = ({
   texto: string;
 }) => {
   return (
-    <div className="contatosContent">
+    <motion.div
+      className="contatosContent"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <img src={icone} alt="" />
       <p>{texto}</p>
-    </div>
+    </motion.div>
   );
 };
 

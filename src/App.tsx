@@ -4,6 +4,7 @@ import AboutPage from "./components/AboutPage/AboutPage";
 import Services from "./components/Services/Services";
 import Contatos from "./components/Contatos/Contatos";
 import Footer from "./components/Footer/Footer";
+import "./App.css";
 
 function App() {
   return (

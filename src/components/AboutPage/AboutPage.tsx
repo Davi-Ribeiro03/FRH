@@ -3,13 +3,19 @@ import AboutImg1 from "../../assets/AboutImg1.png";
 import AboutImg2 from "../../assets/AboutImg2.png";
 import "./AboutPage.css";
 import DivisionPage from "../DivisionPage/DivisionPage";
+import { motion } from "framer-motion";
 
 const AboutPage = () => {
   return (
     <div className="aboutPage">
       <DivisionPage titulo="SOBRE NÓS" />
 
-      <div className="aboutInfo">
+      <motion.div
+        className="aboutInfo"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <section className="aboutInfoLeft">
           Bem-vindo à FRH, sua parceira dedicada para cuidados fisioterapêuticos
           personalizados. Nossa equipe altamente qualificada está pronta para
@@ -21,9 +27,14 @@ const AboutPage = () => {
         <section className="aboutInfoRight">
           <img src={AboutImg1} alt="Imagem de fisioterapeuta em consulta" />
         </section>
-      </div>
+      </motion.div>
 
-      <div className="aboutInfo2">
+      <motion.div
+        className="aboutInfo2"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <section className="aboutInfoLeft">
           Na FRH, acreditamos na importância da flexibilidade. Seja para
           reabilitação pós-operatória, lesões esportivas ou cuidados específicos
@@ -36,7 +47,7 @@ const AboutPage = () => {
         <section className="aboutInfoRight">
           <img src={AboutImg2} alt="Imagem de fisioterapeuta em consulta" />
         </section>
-      </div>
+      </motion.div>
     </div>
   );
 };

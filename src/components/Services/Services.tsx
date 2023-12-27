@@ -17,20 +17,47 @@ const Services = () => {
 
       <div className="content">
         <ServicesContent
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.2 }}
           nome="Reabilitação Pós-Operatória"
           img={Reabilitacao}
         />
         <ServicesContent
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4 }}
           nome="Tratamento de Lesões Esportivas"
           img={Tratamento}
         />
-        <ServicesContent nome="Fisioterapia Neurológica" img={FisioNeuro} />
-        <ServicesContent nome="Fisioterapia Ortopédica" img={FisioOrtopedica} />
+        <ServicesContent
+          nome="Fisioterapia Neurológica"
+          img={FisioNeuro}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        />
+        <ServicesContent
+          nome="Fisioterapia Ortopédica"
+          img={FisioOrtopedica}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        />
         <ServicesContent
           nome="Avaliação e Tratamento da Dor Crônica"
           img={Avaliacao}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
         />
-        <ServicesContent nome="Pilates Terapêutico" img={Pilates} />
+        <ServicesContent
+          nome="Pilates Terapêutico"
+          img={Pilates}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.2 }}
+        />
       </div>
     </div>
   );

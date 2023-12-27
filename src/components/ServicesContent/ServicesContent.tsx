@@ -1,18 +1,23 @@
-import React from 'react'
-import "./ServicesContent.css"
+import React, { ComponentProps } from "react";
+import "./ServicesContent.css";
+import { motion } from "framer-motion";
 
-type ServicesContentType = {
-    nome: string;
-    img: string;
-}
+type ServicesContentType = ComponentProps<typeof motion.div> & {
+  nome: string;
+  img: string;
+};
 
-const ServicesContent = ({nome,img}:ServicesContentType) :JSX.Element=> {
+const ServicesContent = ({
+  nome,
+  img,
+  ...props
+}: ServicesContentType): JSX.Element => {
   return (
-    <div className='servicesContent'>
-        <img src={img} alt={nome} />
-        <p>{nome}</p>
-    </div>
-  )
-}
+    <motion.div className="servicesContent" {...props}>
+      <img src={img} alt={nome} />
+      <p>{nome}</p>
+    </motion.div>
+  );
+};
 
-export default ServicesContent
+export default ServicesContent;
