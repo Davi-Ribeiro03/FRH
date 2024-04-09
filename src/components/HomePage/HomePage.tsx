@@ -1,4 +1,4 @@
-import React from "react";
+
 import HomePageImg from "../../assets/HomePageImg.png";
 import "./HomePage.css";
 import { CgChevronDoubleUp } from "react-icons/cg";

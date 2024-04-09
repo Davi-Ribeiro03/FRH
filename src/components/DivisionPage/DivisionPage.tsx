@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./DivisionPage.css";
 
 const DivisionPage = ({ titulo }: { titulo: string }) => {

@@ -1,4 +1,4 @@
-import React from "react";
+
 import AboutImg1 from "../../assets/AboutImg1.png";
 import AboutImg2 from "../../assets/AboutImg2.png";
 import "./AboutPage.css";
